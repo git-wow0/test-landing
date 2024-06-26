@@ -1,0 +1,187 @@
+
+.advantages-block {
+  background-color: $bg_primary;
+  padding: 50px 0 100px;
+
+  @media screen and (min-width: $tablet-min-screen) {
+    padding: 70px 0 140px;
+  }
+
+  &__content {
+    display: flex;
+    width: 100%;
+    border-radius: 16px;
+    flex-direction: column;
+    overflow: hidden;
+
+    @media screen and (min-width: $desktop-min-screen) {
+      min-height: 636px;
+      flex-direction: row;
+    }
+  }
+
+  &__background {
+    width: 100%;
+    position: relative;
+    background: url('/images/background.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 20px 40px;
+    text-align: center;
+
+    @media screen and (min-width: $tablet-min-screen) {
+      padding: 60px;
+    }
+
+    @media screen and (min-width: $desktop-min-screen) {
+      max-width: 588px;
+      padding: 0 60px 40px;
+      text-align: left;
+    }
+  }
+
+  &__name {
+    color: $label_light;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 24px;
+
+    @media screen and (min-width: $desktop-min-screen) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 20px;
+    background: linear-gradient(0deg, #1A1829, #1A1829),
+    radial-gradient(100% 100% at 100% 0%, rgba(66, 56, 138, 0.2) 0%, rgba(26, 24, 41, 0) 100%);
+
+    @media screen and (min-width: $tablet-min-screen) {
+      padding: 60px;
+    }
+
+    @media screen and (min-width: $desktop-min-screen) {
+      min-width: 524px;
+      padding: 100px 60px 100px 40px;
+    }
+
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+
+    @media screen and (min-width: $tablet-min-screen) {
+      align-items: flex-start;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+
+    @media screen and (min-width: $tablet-min-screen) {
+     flex-direction: row;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+    align-items: center;
+
+    @media screen and (min-width: $desktop-min-screen) {
+      align-items: flex-start;
+    }
+  }
+
+
+  &__labels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $desktop-min-screen) {
+      justify-content: flex-start;
+      margin-bottom: 0;
+    }
+  }
+
+
+}
+
+.icon-block {
+  width: 100%;
+  max-width: 474px;
+  display: flex;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet-min-screen) {
+    width: calc(50% - 10px);
+  }
+
+  &__icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+
+  &__text {
+    font-size: 16px;
+  }
+}
+
+.label {
+  color: $label_body;
+  font-size: 14px;
+  line-height: 135px;
+  padding: 8px 20px;
+  border: solid 1px $label_accent-2;
+  border-radius: 100px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.label-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  &__title {
+    font-size: 20px;
+    font-weight: 500;
+    color: $label_body;
+    position: relative;
+    padding: 0 8px;
+    display: inline-block;
+
+  }
+
+  &__line {
+    flex: 1;
+    height: 1px;
+    background-color: $surfaces_line;
+  }
+}

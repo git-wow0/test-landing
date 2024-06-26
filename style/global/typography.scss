@@ -1,0 +1,20 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat-Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Montserrat-Bold.woff2') format('woff2');
+}
+
+$main_font: 'Montserrat-Regular';
+$bold_font: 'Montserrat-Bold';
+
+
